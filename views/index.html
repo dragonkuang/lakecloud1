@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<title>Scrat - webapp模块化开发体系</title>
+<link rel="stylesheet" type="text/css" href="lib/reset/reset.css">
+<meta name="description" content="Scrat——webapp模块化开发体系，移动端开发集成解决方案" />
+<meta name="keywords" content="scrat,集成解决方案,webapp解决方案,模块化开发,fis,spa,scrat,webapp,UC" />
+<!--
+  ************************************
+  *  ____   ____ ____      _  _____  *
+  * / ___| / ___|  _ \    / \|_   _| *
+  * \___ \| |   | |_) |  / _ \ | |   *
+  *  ___) | |___|  _ <  / ___ \| |   *
+  * |____/ \____|_| \_\/_/   \_\_|   *
+  *                                  *
+  ************************************
+-->
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'www.fullstory.com';
+window['_fs_org'] = 'TXZ0';
+(function(m,n,e,t,l,o,g,y){
+  g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+  o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+  y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+  g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){FS(l,v)};
+  g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;FS(o,v)};
+  g.clearUserCookie=function(d,i){d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+  ';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}
+})(window,document,'FS','script','user');
+</script>
+<script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', '5bc0ba9a65bb499598d9369ffd729534']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
+</head>
+<body>
+<script src="lib/lib.js"></script>
+<script src="boot.js?__inline"></script>
+</body>
+</html>
