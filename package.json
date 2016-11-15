@@ -9,7 +9,9 @@
     "errorhandler": "1.1.1",
     "express": "4.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  },
   "engines": {
     "node": ">=0.10.0"
   }
